@@ -2,15 +2,15 @@
 ## CyberPrompt 2.0 is a next-generation, interactive AI prompt engineering toolkit. It provides a powerful and intuitive interface for crafting, testing, and refining prompts to get the best possible results from large language models (LLMs).
 
 # 🌟 Features
-## Interactive Prompting: A rich and responsive interface for writing and editing prompts.
+# Interactive Prompting: A rich and responsive interface for writing and editing prompts.
 
-## AI Configuration: Fine-tune your AI's behavior with adjustable parameters like creativity and recursion depth.
+# AI Configuration: Fine-tune your AI's behavior with adjustable parameters like creativity and recursion depth.
 
-## Dynamic Results: View AI-generated outputs in various formats, including text, code, and more.
+# Dynamic Results: View AI-generated outputs in various formats, including text, code, and more.
 
-## Interaction History: Keep track of your past prompts and responses for easy reference and reuse.
+# Interaction History: Keep track of your past prompts and responses for easy reference and reuse.
 
-## Extensible and Modular: Built with a clean and scalable architecture, making it easy to add new features and integrations.
+# Extensible and Modular: Built with a clean and scalable architecture, making it easy to add new features and integrations.
 
 ## 🚀 Getting Started
 Prerequisites
