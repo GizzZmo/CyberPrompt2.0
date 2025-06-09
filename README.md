@@ -123,23 +123,23 @@ Enhancements in "CyberPrompt 2.0" would focus on introducing new interaction par
 "CyberPrompt 2.0" is explicitly "based on the concepts and functions" of "Recursive Core." This directive means that the project is not starting from a blank slate in terms of AI logic. However, a substantial portion of the development effort will be dedicated to designing the "translation layer"—the user interface and user experience (UI/UX) that effectively map the functions of "Recursive Core" to intuitive user actions and comprehensible feedback. The key challenge in this mapping is abstraction. "Recursive Core" might expose raw, potentially complex functionalities. "CyberPrompt 2.0" must abstract this complexity into user-friendly interactions. This requires a nuanced understanding of both the AI's capabilities and the end-users' needs and expectations. Failure to bridge this gap effectively could result in a powerful AI system that is ultimately unusable or frustrating for its intended audience.
 
 Table 1: "Recursive Core" to "CyberPrompt 2.0" Feature Evolution Matrix
-To systematically approach this adaptation, the following matrix outlines how interpreted concepts from "Recursive Core" can evolve into tangible features in "CyberPrompt 2.0," along with key frontend considerations. This table is crucial as it directly addresses the "based on" requirement of the project, providing a clear lineage and transformation plan. It serves as a central reference for understanding the project's heritage and guiding its future development, ensuring that the strengths of "Recursive Core" are not lost but are instead amplified through thoughtful UI/UX design in "CyberPrompt 2.0."
+*To systematically approach this adaptation, the following matrix outlines how interpreted concepts from "Recursive Core" can evolve into tangible features in "CyberPrompt 2.0," along with key frontend considerations. This table is crucial as it directly addresses the "based on" requirement of the project, providing a clear lineage and transformation plan. It serves as a central reference for understanding the project's heritage and guiding its future development, ensuring that the strengths of "Recursive Core" are not lost but are instead amplified through thoughtful UI/UX design in "CyberPrompt 2.0."*
 
-    Interpreted "Recursive Core" Concept/Function	Potential Original Purpose/Implementation (Hypothetical)	"CyberPrompt 2.0" Feature Adaptation/Enhancement	Key Frontend Considerations for HTML Project
+Interpreted "Recursive Core" Concept/Function	Potential Original Purpose/Implementation (Hypothetical)	"CyberPrompt 2.0" Feature Adaptation/Enhancement	Key Frontend Considerations for HTML Project
     Iterative Text Refinement	Backend library for generating text through multiple refinement passes	"Magic Edit" button for text sections; "Suggest Improvements"; Version history of generated text	Rich text editor integration; Diffing algorithms for showing changes; State management for text versions
     Multi-Step Problem Solving / Query Decomposition	Algorithm for breaking down complex user queries into sub-tasks, processed sequentially or recursively	Visual flow diagram of problem-solving steps; User input points at intermediate stages; "Explain this step" feature	Dynamic SVG/canvas for flow visualization; Component for conditional input fields; State management for complex task flows
     Hierarchical Data Processing / Generation	Engine for processing or generating nested or tree-like data structures (e.g., outlines, taxonomies)	Interactive tree view for exploring and editing hierarchical data; Expand/collapse sections; Drag-and-drop reordering	Recursive data display components; Efficient rendering of large tree structures; State management for node states (expanded, selected)
     Adaptive Parameter Adjustment	AI model that could adjust internal parameters based on intermediate results or predefined rules	User controls to tweak AI parameters during a multi-step process; "Sensitivity" sliders; "Exploration vs. Exploitation" settings	Dynamic form generation based on AI state; Real-time updates to UI based on parameter changes; API calls to update AI process with new parameters
     Conditional Path Generation	AI capable of generating multiple potential paths or solutions based on initial prompts or branching logic	"Show Alternatives" feature; Side-by-side comparison of different AI outputs; User selection of preferred path for further development	UI components for displaying multiple options (e.g., cards, tabs); State management to track selected paths and alternatives
 
-Eksporter til Regneark
-III. Frontend Architecture: Building Blocks of CyberPrompt 2.0
+
+## III. Frontend Architecture: Building Blocks of CyberPrompt 2.0
 A robust and well-considered frontend architecture is paramount for "CyberPrompt 2.0," ensuring a responsive, maintainable, and accessible user experience. This section details the proposed HTML structure, CSS strategy, and JavaScript considerations.
 
-A. Semantic HTML5 Structure and Best Practices
+# A. Semantic HTML5 Structure and Best Practices
 The foundation of "CyberPrompt 2.0" will be built using modern, semantic HTML5 elements. The adoption of elements such as <main>, <article>, <aside>, <nav>, and <section> will ensure a well-structured document outline. This approach not only aids search engine optimization (SEO) but also significantly enhances accessibility for users relying on assistive technologies.
 
-Accessibility (A11y) will be a key consideration throughout development. Where semantic HTML alone is insufficient to convey the role, state, or properties of complex interactive elements, ARIA (Accessible Rich Internet Applications) roles and attributes will be judiciously applied. This is particularly important for dynamic content generated by the AI, ensuring that such content is understandable and navigable by all users.
+# Accessibility (A11y) will be a key consideration throughout development. Where semantic HTML alone is insufficient to convey the role, state, or properties of complex interactive elements, ARIA (Accessible Rich Internet Applications) roles and attributes will be judiciously applied. This is particularly important for dynamic content generated by the AI, ensuring that such content is understandable and navigable by all users.
 
 Basic page layouts or templates will be defined for key views within the application. These might include:
 
@@ -149,7 +149,7 @@ Interaction history or archive page.
 Help or information sections.
 Adherence to semantic HTML and established best practices from the project's inception will improve code clarity, simplify long-term maintenance, and broaden the application's reach. For an AI-driven application like "CyberPrompt 2.0," where content can be highly dynamic and potentially complex (especially if reflecting "Recursive Core" processes), a strong semantic structure is not merely good practice; it becomes essential for assistive technologies to correctly interpret the page content and for developers to manage the evolving Document Object Model (DOM) effectively.
 
-B. CSS Strategy: Styling for Interactivity and Maintainability
+# B. CSS Strategy: Styling for Interactivity and Maintainability
 The CSS strategy for "CyberPrompt 2.0" must support its interactive nature and ensure long-term maintainability. Several approaches to CSS architecture can be considered, such as BEM (Block, Element, Modifier), SMACSS (Scalable and Modular Architecture for CSS), or potentially CSS-in-JS if a JavaScript framework is adopted. Alternatively, a utility-first CSS framework like Tailwind CSS could be employed to accelerate development and enforce consistency. The choice will depend on team familiarity and project scale.
 
 Responsive design is non-negotiable. A mobile-first or adaptive approach will be implemented to ensure optimal usability across a wide range of devices, from desktops to tablets and smartphones. This includes considerations for touch targets, readable font sizes, and fluid layouts that adapt gracefully to different screen sizes.
@@ -158,7 +158,7 @@ A significant challenge will be styling dynamic content. CSS must be structured 
 
 Consideration will also be given to theming or branding capabilities. If "CyberPrompt 2.0" requires visual customization options or needs to align with different brand identities in the future, the CSS architecture should facilitate easy modification of color schemes, typography, and other visual elements. A well-thought-out CSS strategy is crucial for creating a polished user experience and for ensuring that the stylesheets remain manageable as the application's complexity grows. The choice of CSS methodology can significantly impact development velocity and the ease of maintaining styles over time, especially for a project involving complex UI states driven by AI interactions. A systematic approach can prevent style conflicts and make the codebase easier to reason about, particularly as the development team or the application's feature set expands.
 
-C. JavaScript: Frameworks/Libraries vs. Vanilla JS for AI Interaction
+# C. JavaScript: Frameworks/Libraries vs. Vanilla JS for AI Interaction
 The choice of JavaScript approach—whether to use a modern framework/library or rely on Vanilla JavaScript—is a critical architectural decision for "CyberPrompt 2.0." This decision will be heavily influenced by the need to manage complex AI interactions and application state.
 
 Modern JavaScript Frameworks/Libraries (e.g., React, Vue, Svelte, Angular):
@@ -179,10 +179,10 @@ Application State Management: Tracking data such as the current prompt, conversa
 API Communication: Making asynchronous calls to the AI backend and handling responses.
 The "recursive" nature of the underlying AI might lead to deeply nested or rapidly changing data structures that need to be reflected accurately and efficiently in the UI. Modern JS frameworks with optimized diffing algorithms and reactive update systems are generally better equipped to handle such scenarios with less boilerplate code and a reduced likelihood of bugs compared to manual DOM manipulation in Vanilla JS. This decision point is fundamental to the project's technical foundation and will significantly influence development effort, performance, and long-term scalability.
 
-IV. Designing Intuitive AI Interactions: UI/UX Framework
+## IV. Designing Intuitive AI Interactions: UI/UX Framework
 The success of "CyberPrompt 2.0" hinges on providing an intuitive and effective user experience (UI/UX) for interacting with its AI capabilities. This section outlines the approach to designing user journeys, essential UI components, and ensuring accessibility.
 
-A. User Journey Flows for Key AI-Powered Tasks
+# A. User Journey Flows for Key AI-Powered Tasks
 Mapping out typical user journey flows is essential for understanding how users will interact with "CyberPrompt 2.0" to achieve their goals. These flows will guide the design of the interface and ensure that all necessary steps, states, and user actions are accounted for.
 
 Example User Journey Flow 1: Basic Prompt Interaction
@@ -213,7 +213,7 @@ The UI updates to show the output of the subsequent step.
 This cycle continues until the task is complete or the user chooses to end the interaction.
 A key UX challenge will be visualizing the "recursion" or iterative nature of AI processes derived from "Recursive Core." The UI must find ways to represent these multi-step operations without overwhelming the user. This could involve visual cues like timelines, step indicators, expandable sections for intermediate results, or clear affordances for navigating through the stages of a complex AI task. For AI interactions, especially those that might be "recursive" or non-obvious in their internal workings, mapping user journeys helps to proactively identify potential points of confusion or friction. This process forces consideration of various "what if" scenarios and how the UI can effectively guide the user through complex AI behaviors, thereby building user trust and improving task completion rates.
 
-B. Essential UI Components for AI Dialogue
+# B. Essential UI Components for AI Dialogue
 A set of well-designed UI components will form the building blocks of the AI interaction experience. These components must be intuitive, responsive, and capable of handling the dynamic nature of AI-generated content.
 
 Essential UI components include:
@@ -227,17 +227,17 @@ Controls for Iteration/Recursion: If "Recursive Core" processes are exposed dire
 Error Message Display: Clear, user-friendly messages for handling API errors, AI processing failures, or invalid user inputs.
 The design of these components must carefully consider the nature of the AI's output. If "Recursive Core" can produce varied or complex data structures, the result display area, in particular, needs to be highly flexible and adaptable. A generic text display might not suffice for all scenarios. This links back to the choice of JavaScript framework and the benefits of a component-based architecture, where reusable and specialized components can be developed for rendering different types of AI-generated content effectively.
 
-Table 2: Key Interactive UI Components
-This table provides a more detailed inventory of the UI building blocks, their purpose, conceptual HTML elements, key JavaScript behaviors, and their relevance to the interpreted nature of "Recursive Core." It helps developers visualize the frontend work, estimate effort, and ensure that the UI is specifically tailored to the unique demands of interacting with an AI potentially powered by complex "Recursive Core" logic.
+## Table 2: Key Interactive UI Components
+*This table provides a more detailed inventory of the UI building blocks, their purpose, conceptual HTML elements, key JavaScript behaviors, and their relevance to the interpreted nature of "Recursive Core." It helps developers visualize the frontend work, estimate effort, and ensure that the UI is specifically tailored to the unique demands of interacting with an AI potentially powered by complex "Recursive Core" logic.*
 
-UI Component Name	Purpose in AI Interaction	Core HTML Elements (Conceptual)	Key JavaScript Behaviors/State Managed	Relevance to "Recursive Core" Concepts
-PromptInput	Allows user to submit text, queries, or other inputs to AI.	<textarea>, <button type="submit">, optional <input type="file">	Input validation, submission logic (on click/enter), clearing input, managing input history (optional).	Essential for any prompt-based system. Input might need to be structured for complex recursive tasks.
-AIResponseViewer	Displays formatted AI output, including text, lists, code, images, structured data.	<div> with dynamic content rendering, <pre>, <code>, <img>, custom elements for structured data.	Rendering complex data structures (e.g., from JSON), handling markdown, syntax highlighting, lazy loading images.	Must handle potentially evolving, iterative, or multi-part outputs from recursive processes.
-LoadingIndicator	Provides visual feedback to the user while AI is processing.	<div class="spinner">, <progress>, textual messages.	Showing/hiding based on AI processing state, potentially displaying progress updates for long tasks.	Crucial for managing user patience during potentially lengthy recursive AI computations.
-IterativeControls	Allows user to navigate/control multi-step AI processes.	<button> group (e.g., "Next Step," "Previous Step," "Show Alternatives"), dropdowns for choices.	Managing active step in a recursive process, sending control commands to AI, enabling/disabling controls based on state.	Directly supports user interaction with and navigation through exposed recursive AI processes.
-FeedbackCollector	Gathers user ratings, corrections, or comments on AI output.	<form>, <input type="radio">, <input type="text">, <button type="submit">.	Collecting user input, validating feedback, sending feedback data to backend API.	Facilitates human-in-the-loop refinement, potentially influencing future iterations of recursive AI.
-ConversationHistory	Displays a log of prompts and responses in the current session.	List structure (<ul>, <li>) with alternating user/AI messages.	Appending new messages, scrolling to latest message, potentially storing/retrieving history from localStorage.	Important for tracking context in multi-turn dialogues that might arise from iterative AI processes.
-ErrorDisplay	Shows user-friendly error messages from API or AI.	<div> with distinct styling for errors.	Displaying error messages, allowing dismissal, providing guidance if possible.	Essential for gracefully handling failures, which can occur in complex AI systems.
+    UI Component Name	Purpose in AI Interaction	Core HTML Elements (Conceptual)	Key JavaScript Behaviors/State Managed	Relevance to "Recursive Core" Concepts
+    PromptInput	Allows user to submit text, queries, or other inputs to AI.	<textarea>, <button type="submit">, optional <input type="file">	Input validation, submission logic (on click/enter), clearing input, managing input history (optional).	Essential for any prompt-based system. Input might need to be structured for complex recursive tasks.
+    AIResponseViewer	Displays formatted AI output, including text, lists, code, images, structured data.	<div> with dynamic content rendering, <pre>, <code>, <img>, custom elements for structured data.	Rendering complex data structures (e.g., from JSON), handling markdown, syntax highlighting, lazy loading images.	Must handle potentially evolving, iterative, or multi-part outputs from recursive processes.
+    LoadingIndicator	Provides visual feedback to the user while AI is processing.	<div class="spinner">, <progress>, textual messages.	Showing/hiding based on AI processing state, potentially displaying progress updates for long tasks.	Crucial for managing user patience during potentially lengthy recursive AI computations.
+    IterativeControls	Allows user to navigate/control multi-step AI processes.	<button> group (e.g., "Next Step," "Previous Step," "Show Alternatives"), dropdowns for choices.	Managing active step in a recursive process, sending control commands to AI, enabling/disabling controls based on state.	Directly supports user interaction with and navigation through exposed recursive AI processes.
+    FeedbackCollector	Gathers user ratings, corrections, or comments on AI output.	<form>, <input type="radio">, <input type="text">, <button type="submit">.	Collecting user input, validating feedback, sending feedback data to backend API.	Facilitates human-in-the-loop refinement, potentially influencing future iterations of recursive AI.
+    ConversationHistory	Displays a log of prompts and responses in the current session.	List structure (<ul>, <li>) with alternating user/AI messages.	Appending new messages, scrolling to latest message, potentially storing/retrieving history from localStorage.	Important for tracking context in multi-turn dialogues that might arise from iterative AI processes.
+    ErrorDisplay	Shows user-friendly error messages from API or AI.	<div> with distinct styling for errors.	Displaying error messages, allowing dismissal, providing guidance if possible.	Essential for gracefully handling failures, which can occur in complex AI systems.
 
 Eksporter til Regneark
 C. Accessibility (A11y) and Responsive Design Considerations
