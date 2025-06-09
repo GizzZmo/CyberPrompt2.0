@@ -1,5 +1,3 @@
-# tests/test_core.py
-
 import unittest
 from cyberprompt.core import CyberPromptCore
 
