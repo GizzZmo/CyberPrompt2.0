@@ -10,4 +10,7 @@
 # numpy==1.26.4
 # pandas>=2.0.0
 
-# As of now, this project has no external dependencies.
+# Install the current project in "editable" mode. This makes the
+# 'cyberprompt' package available for import in the environment, which is
+# essential for running tests.
+-e .
