@@ -21,11 +21,11 @@ Pip for package management
 ## Installation
 Clone the repository:
 
-    git clone [https://github.com/GizzZmo/CyberPrompt-2.0.git](https://github.com/GizzZmo/CyberPrompt-2.0.git)
+    git clone [https://github.com/GizzZmo/CyberPrompt2.0.git](https://github.com/GizzZmo/CyberPrompt2.0.git)
 
 ## Navigate to the project directory:
 
-    cd CyberPrompt-2.0
+    cd CyberPrompt2.0
 
 ## Install the required packages:
 
