@@ -1,44 +1,44 @@
 # CyberPrompt 2.0
 ## CyberPrompt 2.0 is a next-generation, interactive AI prompt engineering toolkit. It provides a powerful and intuitive interface for crafting, testing, and refining prompts to get the best possible results from large language models (LLMs).
 
-🌟 Features
-Interactive Prompting: A rich and responsive interface for writing and editing prompts.
+# 🌟 Features
+## Interactive Prompting: A rich and responsive interface for writing and editing prompts.
 
-AI Configuration: Fine-tune your AI's behavior with adjustable parameters like creativity and recursion depth.
+## AI Configuration: Fine-tune your AI's behavior with adjustable parameters like creativity and recursion depth.
 
-Dynamic Results: View AI-generated outputs in various formats, including text, code, and more.
+## Dynamic Results: View AI-generated outputs in various formats, including text, code, and more.
 
-Interaction History: Keep track of your past prompts and responses for easy reference and reuse.
+## Interaction History: Keep track of your past prompts and responses for easy reference and reuse.
 
-Extensible and Modular: Built with a clean and scalable architecture, making it easy to add new features and integrations.
+## Extensible and Modular: Built with a clean and scalable architecture, making it easy to add new features and integrations.
 
-🚀 Getting Started
+## 🚀 Getting Started
 Prerequisites
 Python 3.8 or higher
 
 Pip for package management
 
-Installation
+## Installation
 Clone the repository:
 
 git clone [https://github.com/GizzZmo/CyberPrompt-2.0.git](https://github.com/GizzZmo/CyberPrompt-2.0.git)
 
-Navigate to the project directory:
+## Navigate to the project directory:
 
     cd CyberPrompt-2.0
 
-Install the required packages:
+## Install the required packages:
 
     pip install -r requirements.txt
 
-Usage
+## Usage
 To start the CyberPrompt 2.0 application, run the following command:
 
     python -m cyberprompt.main
 
 This will launch the interactive command-line interface (CLI), where you can start crafting and testing your prompts.
 
-🤝 Contributing
+# 🤝 Contributing
 We welcome contributions from the community! If you'd like to contribute, please follow these steps:
 
 Fork the repository.
@@ -55,21 +55,21 @@ Push your changes to your fork:
 
 Create a pull request with a detailed description of your changes.
 
-📝 License
+#📝 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-🙏 Acknowledgements
+# 🙏 Acknowledgements
 Inspired by the concepts of "Project: Recursive Core."
 
 Special thanks to all the contributors who have helped make this project a reality.
 
-CyberPrompt 2.0: Architectural Blueprint for an Interactive AI Web Application
+## CyberPrompt 2.0: Architectural Blueprint for an Interactive AI Web Application
 This document outlines the architectural plan and development strategy for "CyberPrompt 2.0," a new interactive Artificial Intelligence (AI) website. The project's foundation will be derived from the concepts and functionalities of the prior initiative, "Project: Recursive Core," aiming to deliver an evolved and user-centric AI experience through a complete, standalone HTML-based frontend.
 
-I. Envisioning CyberPrompt 2.0: The Interactive AI Experience
+# I. Envisioning CyberPrompt 2.0: The Interactive AI Experience
 The development of "CyberPrompt 2.0" represents a significant step towards creating a sophisticated yet accessible platform for user interaction with advanced AI capabilities. This section defines its core objectives, user engagement strategies, and the high-level client-side architecture.
 
-A. Defining Core Objectives and User Engagement for "CyberPrompt 2.0"
+# A. Defining Core Objectives and User Engagement for "CyberPrompt 2.0"
 The primary objective of "CyberPrompt 2.0" is to establish a web-based platform enabling users to engage with an AI system primarily through "prompts"—user-initiated inputs that guide the AI's operations. The designation "2.0" signals a substantial advancement, suggesting an enhanced feature set, improved usability, or superior performance when compared to any preceding versions or the foundational concepts inherent in "Project: Recursive Core."
 
 User engagement is central to "CyberPrompt 2.0." The strategy revolves around creating an intuitive and responsive interface for submitting prompts, receiving AI-generated outputs, and potentially participating in iterative dialogues or refining the AI's responses. The term "interactive" underscores the dynamic nature of this engagement, moving beyond static content delivery to a fluid, conversational experience.
@@ -81,7 +81,7 @@ The name "CyberPrompt 2.0" itself offers several cues for its intended nature an
 "2.0" indicates an iterative evolution. This suggests that "CyberPrompt 2.0" will build upon the lessons learned and technological foundations of "Project: Recursive Core," aiming to address any previous limitations in user experience or functional scope.
 The success of "CyberPrompt 2.0" will therefore depend significantly on its capacity to translate the underlying AI's power—potentially derived from the complex logic of "Recursive Core"—into tangible user benefits. This translation must occur through a clear, compelling, and accessible interaction model. The focus extends beyond mere AI capability to encompass AI accessibility and usability. The design philosophy must prioritize a seamless prompt-response loop, making this core interaction effective and efficient. The "2.0" designation also implies a critical review of what aspects of "Project: Recursive Core," in its original or conceptual form, might have been less user-friendly or less capable, with a commitment to addressing these shortcomings in the new iteration.
 
-B. High-Level Architectural Overview (Client-Side Focus)
+# B. High-Level Architectural Overview (Client-Side Focus)
 Conceptually, "CyberPrompt 2.0" will manifest as a client-side application, with its frontend architecture designed to interact with a distinct AI backend. This separation is crucial for managing complexity and leveraging specialized AI processing capabilities that are typically server-based.
 
 The term "standalone HTML project" requires careful clarification in this context. It signifies that the HTML, Cascading Style Sheets (CSS), and JavaScript assets constituting the frontend will form a self-contained package. This package can be deployed on any standard web server or Content Delivery Network (CDN). However, for its core AI functionalities, this standalone frontend will rely on asynchronous requests to backend Application Programming Interface (API) endpoints. It is not "standalone" in the sense of performing AI computations independently within the browser.
@@ -93,15 +93,15 @@ Interaction Logic (JavaScript): The client-side scripts that handle user inputs,
 API Communication Layer: The mechanism responsible for formatting requests to the AI backend and processing the responses.
 This client-server architecture is a standard and robust model for web applications requiring significant computational power or access to large datasets, as is typical for AI systems. The "standalone HTML project" is the client in this model. This architectural choice necessitates a well-defined API contract, which will govern all communication between the frontend and the AI backend. While the standalone nature of the frontend simplifies its deployment, it does not eliminate the critical dependency on a functional and responsive backend for delivering the core AI-driven features. This separation has significant implications for the development workflow, potentially allowing for parallel development by distinct frontend and backend teams, but also requiring robust testing strategies, including the use of mock APIs for isolated frontend development.
 
-II. From "Recursive Core" to "CyberPrompt 2.0": An Evolutionary Blueprint
+## II. From "Recursive Core" to "CyberPrompt 2.0": An Evolutionary Blueprint
 The directive to base "CyberPrompt 2.0" on "Project: Recursive Core" implies a technological lineage and an opportunity to leverage existing AI capabilities. This section explores the potential nature of "Recursive Core" and outlines a strategy for adapting and enhancing its concepts for the new user-facing application.
 
-A. Deciphering "Project: Recursive Core": Interpreting Potential Concepts and Functionalities
+# A. Deciphering "Project: Recursive Core": Interpreting Potential Concepts and Functionalities
 In the absence of specific documentation for "Project: Recursive Core," its characteristics must be inferred from its name. The term "Recursive" suggests processes that are iterative, self-referential, or involve feedback loops. It might imply AI algorithms that break down complex problems into smaller, similar sub-problems, or generative processes where the output of one step informs the input of the next. "Core" indicates that this project likely encapsulated foundational, essential AI capabilities or algorithms, perhaps serving as an engine or library rather than a user-facing application itself.
 
 Potential characteristics of "Project: Recursive Core" could include:
 
-Iterative Refinement: AI processes that progressively improve or alter outputs over multiple steps or cycles.
+# Iterative Refinement: AI processes that progressively improve or alter outputs over multiple steps or cycles.
 Complex Problem Solving: AI capable of deconstructing complex queries or tasks into a sequence of recursively solvable parts.
 Generative Processes: AI that might generate content (text, code, images) or solutions in a step-wise, evolving manner.
 Self-Learning/Adapting Elements (Advanced): AI that could potentially modify its behavior or knowledge based on interactions or outcomes, though this represents a more sophisticated interpretation.
