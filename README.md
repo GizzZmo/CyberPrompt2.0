@@ -1,5 +1,67 @@
-# CyberPrompt2.0
-## Interaktiv KI-generativ kildekode med cyberpunk stil, blåkopien.
+# CyberPrompt 2.0
+## CyberPrompt 2.0 is a next-generation, interactive AI prompt engineering toolkit. It provides a powerful and intuitive interface for crafting, testing, and refining prompts to get the best possible results from large language models (LLMs).
+
+🌟 Features
+Interactive Prompting: A rich and responsive interface for writing and editing prompts.
+
+AI Configuration: Fine-tune your AI's behavior with adjustable parameters like creativity and recursion depth.
+
+Dynamic Results: View AI-generated outputs in various formats, including text, code, and more.
+
+Interaction History: Keep track of your past prompts and responses for easy reference and reuse.
+
+Extensible and Modular: Built with a clean and scalable architecture, making it easy to add new features and integrations.
+
+🚀 Getting Started
+Prerequisites
+Python 3.8 or higher
+
+Pip for package management
+
+Installation
+Clone the repository:
+
+git clone [https://github.com/GizzZmo/CyberPrompt-2.0.git](https://github.com/GizzZmo/CyberPrompt-2.0.git)
+
+Navigate to the project directory:
+
+    cd CyberPrompt-2.0
+
+Install the required packages:
+
+    pip install -r requirements.txt
+
+Usage
+To start the CyberPrompt 2.0 application, run the following command:
+
+    python -m cyberprompt.main
+
+This will launch the interactive command-line interface (CLI), where you can start crafting and testing your prompts.
+
+🤝 Contributing
+We welcome contributions from the community! If you'd like to contribute, please follow these steps:
+
+Fork the repository.
+
+Create a new branch for your feature or bug fix:
+
+    git checkout -b feature/your-feature-name
+
+Make your changes and commit them with a clear and descriptive message.
+
+Push your changes to your fork:
+
+    git push origin feature/your-feature-name
+
+Create a pull request with a detailed description of your changes.
+
+📝 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+🙏 Acknowledgements
+Inspired by the concepts of "Project: Recursive Core."
+
+Special thanks to all the contributors who have helped make this project a reality.
 
 CyberPrompt 2.0: Architectural Blueprint for an Interactive AI Web Application
 This document outlines the architectural plan and development strategy for "CyberPrompt 2.0," a new interactive Artificial Intelligence (AI) website. The project's foundation will be derived from the concepts and functionalities of the prior initiative, "Project: Recursive Core," aiming to deliver an evolved and user-centric AI experience through a complete, standalone HTML-based frontend.
@@ -63,12 +125,12 @@ Enhancements in "CyberPrompt 2.0" would focus on introducing new interaction par
 Table 1: "Recursive Core" to "CyberPrompt 2.0" Feature Evolution Matrix
 To systematically approach this adaptation, the following matrix outlines how interpreted concepts from "Recursive Core" can evolve into tangible features in "CyberPrompt 2.0," along with key frontend considerations. This table is crucial as it directly addresses the "based on" requirement of the project, providing a clear lineage and transformation plan. It serves as a central reference for understanding the project's heritage and guiding its future development, ensuring that the strengths of "Recursive Core" are not lost but are instead amplified through thoughtful UI/UX design in "CyberPrompt 2.0."
 
-Interpreted "Recursive Core" Concept/Function	Potential Original Purpose/Implementation (Hypothetical)	"CyberPrompt 2.0" Feature Adaptation/Enhancement	Key Frontend Considerations for HTML Project
-Iterative Text Refinement	Backend library for generating text through multiple refinement passes	"Magic Edit" button for text sections; "Suggest Improvements"; Version history of generated text	Rich text editor integration; Diffing algorithms for showing changes; State management for text versions
-Multi-Step Problem Solving / Query Decomposition	Algorithm for breaking down complex user queries into sub-tasks, processed sequentially or recursively	Visual flow diagram of problem-solving steps; User input points at intermediate stages; "Explain this step" feature	Dynamic SVG/canvas for flow visualization; Component for conditional input fields; State management for complex task flows
-Hierarchical Data Processing / Generation	Engine for processing or generating nested or tree-like data structures (e.g., outlines, taxonomies)	Interactive tree view for exploring and editing hierarchical data; Expand/collapse sections; Drag-and-drop reordering	Recursive data display components; Efficient rendering of large tree structures; State management for node states (expanded, selected)
-Adaptive Parameter Adjustment	AI model that could adjust internal parameters based on intermediate results or predefined rules	User controls to tweak AI parameters during a multi-step process; "Sensitivity" sliders; "Exploration vs. Exploitation" settings	Dynamic form generation based on AI state; Real-time updates to UI based on parameter changes; API calls to update AI process with new parameters
-Conditional Path Generation	AI capable of generating multiple potential paths or solutions based on initial prompts or branching logic	"Show Alternatives" feature; Side-by-side comparison of different AI outputs; User selection of preferred path for further development	UI components for displaying multiple options (e.g., cards, tabs); State management to track selected paths and alternatives
+    Interpreted "Recursive Core" Concept/Function	Potential Original Purpose/Implementation (Hypothetical)	"CyberPrompt 2.0" Feature Adaptation/Enhancement	Key Frontend Considerations for HTML Project
+    Iterative Text Refinement	Backend library for generating text through multiple refinement passes	"Magic Edit" button for text sections; "Suggest Improvements"; Version history of generated text	Rich text editor integration; Diffing algorithms for showing changes; State management for text versions
+    Multi-Step Problem Solving / Query Decomposition	Algorithm for breaking down complex user queries into sub-tasks, processed sequentially or recursively	Visual flow diagram of problem-solving steps; User input points at intermediate stages; "Explain this step" feature	Dynamic SVG/canvas for flow visualization; Component for conditional input fields; State management for complex task flows
+    Hierarchical Data Processing / Generation	Engine for processing or generating nested or tree-like data structures (e.g., outlines, taxonomies)	Interactive tree view for exploring and editing hierarchical data; Expand/collapse sections; Drag-and-drop reordering	Recursive data display components; Efficient rendering of large tree structures; State management for node states (expanded, selected)
+    Adaptive Parameter Adjustment	AI model that could adjust internal parameters based on intermediate results or predefined rules	User controls to tweak AI parameters during a multi-step process; "Sensitivity" sliders; "Exploration vs. Exploitation" settings	Dynamic form generation based on AI state; Real-time updates to UI based on parameter changes; API calls to update AI process with new parameters
+    Conditional Path Generation	AI capable of generating multiple potential paths or solutions based on initial prompts or branching logic	"Show Alternatives" feature; Side-by-side comparison of different AI outputs; User selection of preferred path for further development	UI components for displaying multiple options (e.g., cards, tabs); State management to track selected paths and alternatives
 
 Eksporter til Regneark
 III. Frontend Architecture: Building Blocks of CyberPrompt 2.0
